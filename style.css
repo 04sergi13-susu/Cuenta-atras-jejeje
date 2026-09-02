@@ -1,0 +1,1500 @@
+/* =====================================================
+   🌸 CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #563b45;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(255, 200, 220, 0.65),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(245, 190, 210, 0.55),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 80% 10%,
+            rgba(255, 225, 210, 0.45),
+            transparent 20%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff9fb,
+            #fcecf2,
+            #fff8f3
+        );
+
+    overflow-x: hidden;
+
+}
+
+
+/* =====================================================
+   💕 CORAZONES DECORATIVOS
+===================================================== */
+
+.corazones {
+
+    position: fixed;
+
+    color: rgba(
+        180,
+        90,
+        120,
+        0.18
+    );
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        flotar 5s ease-in-out infinite;
+
+}
+
+
+.corazones-1 {
+
+    top: 10%;
+
+    left: 5%;
+
+    font-size: 50px;
+
+}
+
+
+.corazones-2 {
+
+    top: 30%;
+
+    right: 5%;
+
+    font-size: 35px;
+
+    animation-delay: 1s;
+
+}
+
+
+.corazones-3 {
+
+    bottom: 20%;
+
+    left: 8%;
+
+    font-size: 30px;
+
+    animation-delay: 2s;
+
+}
+
+
+.corazones-4 {
+
+    bottom: 8%;
+
+    right: 10%;
+
+    font-size: 55px;
+
+    animation-delay: 3s;
+
+}
+
+
+@keyframes flotar {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(-5deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-15px)
+            rotate(5deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   📄 SECCIONES
+===================================================== */
+
+section {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* =====================================================
+   ✨ TEXTOS
+===================================================== */
+
+h1 {
+
+    margin: 18px 0;
+
+    font-size: 48px;
+
+    font-weight: normal;
+
+    color: #704653;
+
+}
+
+
+h2 {
+
+    font-weight: normal;
+
+    color: #704653;
+
+}
+
+
+p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+.pequeno {
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #a5687c;
+
+}
+
+
+.subtitulo {
+
+    max-width: 500px;
+
+    margin:
+        0 auto 25px;
+
+    color: #80606b;
+
+}
+
+
+.linea {
+
+    width: 70px;
+
+    height: 1px;
+
+    margin: 25px auto;
+
+    background: #d39aaa;
+
+}
+
+
+/* =====================================================
+   🌷 QUIZ
+===================================================== */
+
+#quiz {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.quiz-box {
+
+    position: relative;
+
+    width: 90%;
+
+    max-width: 650px;
+
+    padding: 55px 35px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.75
+        );
+
+    border:
+        1px solid
+        rgba(
+            180,
+            110,
+            135,
+            0.18
+        );
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(
+            110,
+            60,
+            80,
+            0.12
+        );
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.flor {
+
+    font-size: 38px;
+
+    color: #c77791;
+
+    margin-bottom: 10px;
+
+}
+
+
+#pregunta {
+
+    margin:
+        30px auto;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+}
+
+
+#respuestas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+#respuestas button {
+
+    width: 90%;
+
+    max-width: 430px;
+
+}
+
+
+/* =====================================================
+   💗 BOTONES
+===================================================== */
+
+button {
+
+    border: none;
+
+    padding:
+        15px 28px;
+
+    margin: 9px;
+
+    border-radius: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #df9ab0,
+            #bd6c88
+        );
+
+    color: white;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            160,
+            80,
+            110,
+            0.2
+        );
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+
+}
+
+
+button:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 28px
+        rgba(
+            160,
+            80,
+            110,
+            0.28
+        );
+
+}
+
+
+button:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/* =====================================================
+   🌹 BIENVENIDA
+===================================================== */
+
+#bienvenida {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.bienvenida-box {
+
+    width: 90%;
+
+    max-width: 680px;
+
+    padding:
+        65px 35px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.78
+        );
+
+    border:
+        1px solid
+        rgba(
+            180,
+            110,
+            135,
+            0.2
+        );
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 30px 80px
+        rgba(
+            110,
+            60,
+            80,
+            0.14
+        );
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.corazon-grande {
+
+    font-size: 55px;
+
+    color: #c76d89;
+
+    animation:
+        latido 1.5s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes latido {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.12);
+
+    }
+
+}
+
+
+/* =====================================================
+   🌸 SORPRESA
+===================================================== */
+
+.sorpresa-contenedor {
+
+    width: 94%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding:
+        55px 20px 100px;
+
+}
+
+
+.cabecera {
+
+    margin-bottom: 20px;
+
+}
+
+
+#tituloDia {
+
+    margin-bottom: 5px;
+
+    font-size: 55px;
+
+}
+
+
+#contador {
+
+    margin-top: 5px;
+
+    color: #956575;
+
+    font-size: 16px;
+
+}
+
+
+/* =====================================================
+   💕 DÍAS
+===================================================== */
+
+.dias-titulo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin:
+        35px auto 20px;
+
+}
+
+
+.dias-titulo span {
+
+    display: block;
+
+    width: 70px;
+
+    height: 1px;
+
+    background:
+        rgba(
+            170,
+            100,
+            125,
+            0.35
+        );
+
+}
+
+
+.dias-titulo p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #956575;
+
+}
+
+
+#selectorDias {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    max-width: 750px;
+
+    margin:
+        15px auto 45px;
+
+    padding: 20px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.5
+        );
+
+    border:
+        1px solid
+        rgba(
+            180,
+            110,
+            135,
+            0.12
+        );
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            100,
+            60,
+            80,
+            0.06
+        );
+
+}
+
+
+.boton-dia {
+
+    width: 44px;
+
+    height: 44px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+}
+
+
+/* DÍAS DISPONIBLES */
+
+.boton-dia.disponible {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e0a0b4,
+            #c77992
+        );
+
+}
+
+
+/* DÍA ACTUAL */
+
+.boton-dia.hoy {
+
+    background:
+        linear-gradient(
+            135deg,
+            #aa5272,
+            #813d59
+        );
+
+    transform:
+        scale(1.15);
+
+    box-shadow:
+        0 8px 22px
+        rgba(
+            130,
+            60,
+            90,
+            0.35
+        );
+
+}
+
+
+/* DÍAS BLOQUEADOS */
+
+.boton-dia.bloqueado {
+
+    background: #ddd4d8;
+
+    color: #88777e;
+
+}
+
+
+/* =====================================================
+   📸 MARCO DE LA TARJETA
+===================================================== */
+
+.marco-tarjeta {
+
+    position: relative;
+
+    width: 390px;
+
+    height: 520px;
+
+    margin: 0 auto;
+
+    padding: 15px;
+
+    background:
+        #fffdfb;
+
+    border-radius: 27px;
+
+    box-shadow:
+        0 30px 70px
+        rgba(
+            80,
+            45,
+            60,
+            0.18
+        );
+
+}
+
+
+.marco-tarjeta::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border:
+        1px solid
+        rgba(
+            180,
+            110,
+            135,
+            0.3
+        );
+
+    border-radius: 20px;
+
+    pointer-events: none;
+
+}
+
+
+/* =====================================================
+   🔄 TARJETA
+===================================================== */
+
+.tarjeta {
+
+    width: 100%;
+
+    height: 100%;
+
+    perspective: 1200px;
+
+    cursor: pointer;
+
+}
+
+
+.tarjeta-interior {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    transition:
+        transform 0.9s
+        cubic-bezier(
+            0.4,
+            0.2,
+            0.2,
+            1
+        );
+
+    transform-style: preserve-3d;
+
+}
+
+
+.tarjeta.girada
+.tarjeta-interior {
+
+    transform:
+        rotateY(180deg);
+
+}
+
+
+.tarjeta-frente,
+.tarjeta-detras {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+}
+
+
+/* =====================================================
+   📷 CARA DE LA FOTO
+===================================================== */
+
+.tarjeta-frente {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffefd,
+            #fff9f6
+        );
+
+}
+
+
+.marco-foto {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 390px;
+
+    padding: 9px;
+
+    background: white;
+
+    border:
+        1px solid
+        #eadfe2;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            80,
+            50,
+            60,
+            0.1
+        );
+
+}
+
+
+.marco-foto img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+
+}
+
+
+/* =====================================================
+   📐 ESQUINAS DEL MARCO
+===================================================== */
+
+.esquina {
+
+    position: absolute;
+
+    width: 22px;
+
+    height: 22px;
+
+    border-color:
+        rgba(
+            180,
+            110,
+            135,
+            0.55
+        );
+
+}
+
+
+.esquina-1 {
+
+    top: 4px;
+
+    left: 4px;
+
+    border-top: 2px solid;
+
+    border-left: 2px solid;
+
+}
+
+
+.esquina-2 {
+
+    top: 4px;
+
+    right: 4px;
+
+    border-top: 2px solid;
+
+    border-right: 2px solid;
+
+}
+
+
+.esquina-3 {
+
+    bottom: 4px;
+
+    left: 4px;
+
+    border-bottom: 2px solid;
+
+    border-left: 2px solid;
+
+}
+
+
+.esquina-4 {
+
+    bottom: 4px;
+
+    right: 4px;
+
+    border-bottom: 2px solid;
+
+    border-right: 2px solid;
+
+}
+
+
+/* =====================================================
+   📝 TEXTO DE LA FOTO
+===================================================== */
+
+.texto-foto {
+
+    padding-top: 10px;
+
+}
+
+
+.texto-foto p {
+
+    margin:
+        0 0 2px;
+
+    font-size: 16px;
+
+    color: #73505c;
+
+}
+
+
+.texto-foto span {
+
+    font-size: 12px;
+
+    color: #a27b88;
+
+}
+
+
+/* =====================================================
+   💌 PARTE TRASERA
+===================================================== */
+
+.tarjeta-detras {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9,
+            #fff4f7
+        );
+
+    border:
+        8px solid
+        #fffdfb;
+
+    transform:
+        rotateY(180deg);
+
+}
+
+
+.mensaje-dia {
+
+    max-width: 280px;
+
+    margin: 25px auto;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #684653;
+
+}
+
+
+.decoracion-mensaje {
+
+    font-size: 30px;
+
+    color: #d28ca2;
+
+}
+
+
+/* =====================================================
+   👆 INDICACIÓN
+===================================================== */
+
+.indicacion {
+
+    margin-top: 22px;
+
+    font-size: 14px;
+
+    letter-spacing: 0.4px;
+
+    color: #98737f;
+
+}
+
+
+/* =====================================================
+   💌 FINAL
+===================================================== */
+
+.sobre-final {
+
+    margin-top: 100px;
+
+    padding:
+        30px 20px 100px;
+
+}
+
+
+.separador-final {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.separador-final span {
+
+    width: 80px;
+
+    height: 1px;
+
+    background:
+        rgba(
+            170,
+            100,
+            125,
+            0.3
+        );
+
+}
+
+
+.separador-final p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #9b6979;
+
+}
+
+
+/* =====================================================
+   ✉️ SOBRE
+===================================================== */
+
+.sobre {
+
+    position: relative;
+
+    width: 320px;
+
+    height: 210px;
+
+    margin: 55px auto;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7a4b8,
+            #d4839f
+        );
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 25px 55px
+        rgba(
+            100,
+            50,
+            70,
+            0.2
+        );
+
+    transition:
+        transform 0.3s;
+
+}
+
+
+.sobre:hover {
+
+    transform:
+        translateY(-6px);
+
+}
+
+
+/* =====================================================
+   ❤️ CORAZÓN DEL SOBRE
+===================================================== */
+
+.corazon-sobre {
+
+    position: absolute;
+
+    top: 83px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    z-index: 5;
+
+    color: white;
+
+    font-size: 28px;
+
+    transition:
+        opacity 0.4s;
+
+}
+
+
+.sobre.abierto
+.corazon-sobre {
+
+    opacity: 0;
+
+}
+
+
+/* =====================================================
+   ✉️ TAPA
+===================================================== */
+
+.tapa-sobre {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 0;
+
+    border-left:
+        160px solid transparent;
+
+    border-right:
+        160px solid transparent;
+
+    border-top:
+        110px solid #c87591;
+
+    transform-origin: top;
+
+    transition:
+        transform 0.9s;
+
+    z-index: 4;
+
+}
+
+
+/* =====================================================
+   📜 CARTA
+===================================================== */
+
+.papel-carta {
+
+    position: absolute;
+
+    left: 18px;
+
+    right: 18px;
+
+    bottom: 10px;
+
+    height: 180px;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf8,
+            #fff7ed
+        );
+
+    border-radius: 5px;
+
+    overflow-y: auto;
+
+    opacity: 0;
+
+    transform:
+        translateY(70px);
+
+    transition:
+        transform 0.9s,
+        opacity 0.9s;
+
+    z-index: 2;
+
+    box-shadow:
+        0 5px 15px
+        rgba(
+            80,
+            45,
+            55,
+            0.1
+        );
+
+}
+
+
+.papel-carta h2 {
+
+    margin-top: 0;
+
+    font-size: 25px;
+
+}
+
+
+.papel-carta p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   💌 SOBRE ABIERTO
+===================================================== */
+
+.sobre.abierto
+.tapa-sobre {
+
+    transform:
+        rotateX(180deg);
+
+}
+
+
+.sobre.abierto
+.papel-carta {
+
+    opacity: 1;
+
+    transform:
+        translateY(-95px);
+
+}
+
+
+/* =====================================================
+   📱 MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+
+    h1 {
+
+        font-size: 35px;
+
+    }
+
+
+    #tituloDia {
+
+        font-size: 42px;
+
+    }
+
+
+    .contenedor {
+
+        padding:
+            40px 15px;
+
+    }
+
+
+    .quiz-box,
+    .bienvenida-box {
+
+        padding:
+            45px 22px;
+
+    }
+
+
+    .marco-tarjeta {
+
+        width: 315px;
+
+        height: 440px;
+
+        padding: 12px;
+
+    }
+
+
+    .marco-foto {
+
+        height: 325px;
+
+    }
+
+
+    .mensaje-dia {
+
+        font-size: 19px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .tarjeta-detras {
+
+        padding: 30px;
+
+    }
+
+
+    .boton-dia {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    #selectorDias {
+
+        padding: 15px;
+
+    }
+
+
+    .sobre {
+
+        width: 280px;
+
+        height: 190px;
+
+    }
+
+
+    .tapa-sobre {
+
+        border-left-width: 140px;
+
+        border-right-width: 140px;
+
+        border-top-width: 100px;
+
+    }
+
+
+    .corazon-sobre {
+
+        top: 75px;
+
+    }
+
+
+    .papel-carta {
+
+        height: 165px;
+
+    }
+
+}
