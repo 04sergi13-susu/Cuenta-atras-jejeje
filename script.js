@@ -182,7 +182,7 @@ const dias = [
     {
         dia: 1,
 
-        foto: "fotos/dia1.jpg",
+        foto: "fotos/dia1.JPG",
 
         mensaje:
             "Amo cada uno de tus besos y abrazos ❤️"
@@ -202,7 +202,7 @@ const dias = [
     {
         dia: 3,
 
-        foto: "fotos/dia3.jpg",
+        foto: "fotos/dia3.JPG",
 
         mensaje:
             "Despertar junto a ti es un regalo de los angeles ❤️"
@@ -232,7 +232,7 @@ const dias = [
     {
         dia: 6,
 
-        foto: "fotos/dia6.jpg",
+        foto: "fotos/dia6.JPG",
 
         mensaje:
             "Rezo por entrar año tras año juntitos hasa el final ❤️"
@@ -242,7 +242,7 @@ const dias = [
     {
         dia: 7,
 
-        foto: "fotos/dia7.jpg",
+        foto: "fotos/dia7.PNG",
 
         mensaje:
             "Lo mas hermoso del mundo, el mar y el amor de mi vida ❤️"
@@ -252,7 +252,7 @@ const dias = [
     {
         dia: 8,
 
-        foto: "fotos/dia8.jpg",
+        foto: "fotos/dia8.JPG",
 
         mensaje:
             "Que rico es poder estar piel con piel ❤️"
@@ -262,7 +262,7 @@ const dias = [
     {
         dia: 9,
 
-        foto: "fotos/dia9.jpg",
+        foto: "fotos/dia9.JPG",
 
         mensaje:
             "Tienes la sonrisa mas alegre y contagiosa del mundo ❤️"
@@ -272,7 +272,7 @@ const dias = [
     {
         dia: 10,
 
-        foto: "fotos/dia10.jpg",
+        foto: "fotos/dia10.JPG",
 
         mensaje:
             "Que feliz me hace ser tu pololo ❤️"
@@ -282,7 +282,7 @@ const dias = [
     {
         dia: 11,
 
-        foto: "fotos/dia11.jpg",
+        foto: "fotos/dia11.JPG",
 
         mensaje:
             "Me encanta que theito apareciera en tu vida para asi poder sonreir mas veces ❤️"
@@ -292,7 +292,7 @@ const dias = [
     {
         dia: 12,
 
-        foto: "fotos/dia12.jpg",
+        foto: "fotos/dia12.JPG",
 
         mensaje:
             "Siempre cuidare de ti, en la salud y la enfermedad ❤️"
@@ -302,7 +302,7 @@ const dias = [
     {
         dia: 13,
 
-        foto: "fotos/dia13.jpg",
+        foto: "fotos/dia13.JPG",
 
         mensaje:
             "Siento que contigo podria ser feliz en cualquier lugar del mundo ❤️"
@@ -322,7 +322,7 @@ const dias = [
     {
         dia: 15,
 
-        foto: "fotos/dia15.jpg",
+        foto: "fotos/dia15.JPG",
 
         mensaje:
             "Amo lo bien que vistes y lo bien que te queda todo amorcin ❤️"
@@ -332,7 +332,7 @@ const dias = [
     {
         dia: 16,
 
-        foto: "fotos/dia16.jpg",
+        foto: "fotos/dia16.JPG",
 
         mensaje:
             "Una foto para toda una vida... ❤️"
@@ -342,7 +342,7 @@ const dias = [
     {
         dia: 17,
 
-        foto: "fotos/dia17.jpg",
+        foto: "fotos/dia17.JPG",
 
         mensaje:
             "Juntos, siempre el mejor equipo ❤️"
